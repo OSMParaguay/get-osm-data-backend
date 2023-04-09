@@ -126,7 +126,7 @@ yarn global add pm2
 #### Start an app
 
 ```bash
-pm2 start /home/proyectosbeta/repositorioGit/get-osm-data-backend/dist/bundle.js --name get-osm-data-backend
+pm2 start /home/proyectosbeta/repositoriosGit/get-osm-data-backend/dist/bundle.js --name get-osm-data-backend
 ```
 
 #### Managing processes
