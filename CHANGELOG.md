@@ -1,5 +1,9 @@
 # Release Notes
 
+## v1.2.0
+
+- [build] Update package file.
+
 ## v1.1.0
 
 - [feat] Add log services.
