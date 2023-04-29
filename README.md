@@ -6,7 +6,8 @@ The backend of getting OSM data.
 
 - NodeJS 18.12.1
 - NPM 8.19.2
-- Yarn 1.22.11
+- Yarn 1.22.19
+- MongoDB 6.0.4 Community
 
 ## Development
 
