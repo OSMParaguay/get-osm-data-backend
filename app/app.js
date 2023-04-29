@@ -3,9 +3,10 @@
 import express from "express";
 import createLocaleMiddleware from "express-locale";
 import { rateLimit } from "express-rate-limit";
-import { lookup } from 'geoip-lite';
+import { lookup } from "geoip-lite";
 import helmet from "helmet";
 import cors from "cors";
+import { DOMAIN_OSM_PARAGUAY_DATA } from "./config/index.js";
 import { router as rest } from "./routes/index.js";
 import { startPolyglot } from "./middleware/startPolyglot.middleware.js";
 import Log from "./models/log.model.js";
@@ -35,16 +36,20 @@ app.use(startPolyglot);
 
 // Security.
 app.use(helmet());
-app.use(cors());
+app.use(
+  cors({
+    origin: DOMAIN_OSM_PARAGUAY_DATA,
+  })
+);
 
 app.use(async (req, res, next) => {
-  const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+  const ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
   const geo = lookup(ip);
   const log = new Log({
-      url: req.url,
-      method: req.method,
-      ip: ip,
-      geo: geo,
+    url: req.url,
+    method: req.method,
+    ip: ip,
+    geo: geo,
   });
 
   await log.save();

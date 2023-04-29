@@ -4,6 +4,7 @@
 
 - [build] Update package file.
 - [docs] Update readme file.
+- [feat] CORS https://osmparaguay.proyectosbeta.net
 
 ## v1.1.0
 
