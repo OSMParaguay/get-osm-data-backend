@@ -192,6 +192,4 @@ pm2 startup
 
 Using the API
 
-```bash
-https://api-osmparaguay-data.proyectosbeta.net/api/location/v1/reverse/-57.45574951171876/-25.2918878849706
-```
+- https://api-osmparaguay-data.proyectosbeta.net/api/location/v1/reverse/-57.45574951171876/-25.2918878849706
