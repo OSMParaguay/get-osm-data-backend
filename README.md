@@ -8,6 +8,8 @@ The backend of getting OSM data.
 - NPM 8.19.2
 - Yarn 1.22.19
 - MongoDB 6.0.4 Community
+- [OpenStreetMap](https://www.openstreetmap.org)
+- [Nominatim](https://nominatim.org/)
 
 ## Development
 
@@ -186,4 +188,10 @@ pm2 start app.bundle.js --name get-osm-data-backend -i max
 
 ```bash
 pm2 startup
+```
+
+Using the API
+
+```bash
+https://api-osmparaguay-data.proyectosbeta.net/api/location/v1/reverse/-57.45574951171876/-25.2918878849706
 ```

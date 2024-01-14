@@ -3,6 +3,7 @@
 ## v1.3.0
 
 - [build] Update package file.
+- [docs] Update readme file.
 
 ## v1.2.0
 
