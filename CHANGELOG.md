@@ -1,5 +1,9 @@
 # Release Notes
 
+## v1.3.0
+
+- [build] Update package file.
+
 ## v1.2.0
 
 - [build] Update package file.
